@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 
 def roll_call_dwarves(dwarves)
   i = 0
@@ -30,6 +30,7 @@ def long_planeteer_calls(words)
   i=0
   holdval = false
   while i < words.length
+    binding.pry
     if words[i].size > 4
       holdval = true
     end
