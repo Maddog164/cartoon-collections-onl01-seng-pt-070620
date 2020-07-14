@@ -1,10 +1,30 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+#require 'pry'
+
+def roll_call_dwarves(dwarves)
+  i = 0
+  while i < dwarves.length
+    #binding.pry
+    puts "#{i+1}. #{dwarves[i]}"
+    i += 1
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+#binding.pry
+dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+roll_call_dwarves(dwarves)
+
+def summon_captain_planet(elements)
+  i = 0
+  newelements = []
+  while i < elements.length
+    newelements << "#{elements[i].capitalize}" + "!"
+    i +=1
+  end
+  newelements
 end
+
+elements = ["earth", "wind", "fire", "water", "heart"]
+summon_captain_planet(elements)
 
 def long_planeteer_calls# code an argument here
   # Your code here
