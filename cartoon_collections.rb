@@ -28,7 +28,7 @@ summon_captain_planet(elements)
 
 def long_planeteer_calls(words)
   i=0
-  holdval = true
+  holdval = false
   while i < words.length
     if words[i].size > 4 && holdval == true
       holdval = true
