@@ -36,7 +36,7 @@ def long_planeteer_calls(words)
       holdval = false
     end
     i += 1
-    return holdval 
+    return holdval
   end
 
 words = ["puff", "go", "two"]
