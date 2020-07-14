@@ -26,9 +26,21 @@ end
 elements = ["earth", "wind", "fire", "water", "heart"]
 summon_captain_planet(elements)
 
-def long_planeteer_calls# code an argument here
-  # Your code here
-end
+def long_planeteer_calls(words)
+  i=0
+  holdval = true
+  while i < words.length
+    if words[i].size > 4
+      holdval = true
+    else
+      holdval = false
+    end
+    i += 1
+    return holdval 
+  end
+
+words = ["puff", "go", "two"]
+long_planeteer_calls(words)
 
 def find_the_cheese# code an argument here
   # the array below is here to help
