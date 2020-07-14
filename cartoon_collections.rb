@@ -32,8 +32,6 @@ def long_planeteer_calls(words)
   while i < words.length
     if words[i].size > 4
       holdval = true
-    else
-      holdval = false
     end
     i += 1
     return holdval
